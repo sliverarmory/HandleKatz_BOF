@@ -1,0 +1,32 @@
+{
+    "name": "HandleKatz",
+    "version": "0.0.0",
+    "command_name": "handlekatz",
+    "extension_author": "c2biz",
+    "original_author": "EspressoCake",
+    "repo_url": "https://github.com/sliverarmory/HandleKatz_BOF",
+    "help": "Implementation of handlekatz as a BOF (x64 only)",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "handlekatz.x64.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "pid",
+            "desc": "process id",
+            "type": "int",
+            "optional": false
+        },
+        {
+            "name": "pth_dump",
+            "desc": "dump output path",
+            "type": "string",
+            "optional": false
+        }
+    ]
+}
